@@ -1,0 +1,185 @@
+@media only screen and (min-width: 62em) {
+	/* HEADER CSS STYLING */
+
+	.navigation li {
+		display: block;
+	}
+
+	.navigation {
+		display: flex;
+		margin-right: 25px;
+	}
+
+	.header {
+		justify-content: space-between;
+		width: 95%;
+	}
+
+	.navigation a {
+		margin-left: 20px;
+		font-size: 24px;
+		color: var(--main-color1);
+		padding: 4px;
+		font-weight: bold;
+	}
+
+	.navigation a:hover {
+		background-color: var(--main-color1);
+		color: var(--main-color2);
+		border-radius: 6px;
+	}
+
+	.navigation li:first-child {
+		display: none;
+	}
+
+	.fa-brands {
+		font-size: 26px;
+	}
+
+	.fa {
+		display: none;
+	}
+
+	nav {
+		flex-direction: row-reverse;
+	}
+
+	.name-block {
+		font-size: 15px;
+		text-align: center;
+	}
+
+	/* CHAMBER HOME CSS STYLING */
+
+	#chamber {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: repeat(3, 225px);
+	}
+
+	#chamber .event,
+	#chamber .weather,
+	#chamber .join {
+		grid-column: 1/2;
+	}
+
+	#chamber .spotlight {
+		grid-column: 4/5;
+		grid-row: 1/4;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(auto-fit, 3);
+		gap: 0.5rem;
+	}
+
+	.spotlight .random-spotlight:nth-of-type(3) {
+		display: block;
+		border: 2px solid var(--main-color2);
+		margin: 0 auto;
+		width: 100%;
+		grid-row: span 2;
+		height: auto;
+		padding: 0.5rem;
+	}
+
+	#chamber .hero,
+	#chamber .news {
+		grid-column: 2/4;
+	}
+
+	#chamber .hero {
+		grid-row: 1/3;
+	}
+
+	#chamber .news {
+		grid-row: 3/4;
+	}
+
+	#chamber .join {
+		grid-row: 3/4;
+	}
+
+	#chamber picture {
+		border: 1px solid var(--main-color2);
+	}
+
+	/* DISCOVER PAGE CSS STYLING */
+
+	#discover p {
+		font-size: 16px;
+	}
+
+	/* JOIN PAGE CSS STYLING */
+
+	#form .join-form {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: repeat(2, auto);
+		gap: 1rem;
+		align-items: flex-start;
+	}
+
+	#form .contact-info {
+		grid-column: 1/2;
+		grid-row: 1/2;
+	}
+
+	#form .business {
+		grid-column: 2/3;
+		grid-row: 1/2;
+	}
+
+	#form .member-group {
+		grid-column: 3/4;
+		grid-row: 1/2;
+	}
+
+	#form button {
+		grid-column: 2/3;
+	}
+
+	#form .contact-info input,
+	#form .business input {
+		width: 65%;
+		height: 30px;
+	}
+
+	#form .business textarea {
+		width: 65%;
+	}
+
+	/* DIRECTORY PAGE CSS STYLING */
+
+	.directory-grid {
+		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	}
+
+	.directory-grid section {
+		font-size: 18px;
+	}
+
+	.directory-list section {
+		font-size: 18px;
+		padding: 10px;
+	}
+
+	/* CONTACT PAGE CSS STYLING */
+
+	.inqueries input,
+	.inqueries textarea {
+		width: 70%;
+	}
+
+	/* FOOTER CSS STYLING */
+
+	.footer-logo-block {
+		justify-content: center;
+	}
+
+	.contact-block {
+		font-size: 18px;
+	}
+
+	.base {
+		font-size: 16px;
+	}
+}

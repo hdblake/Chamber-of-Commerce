@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet" defer>
+    <title>Join Chamber</title>
+    <meta name="description" content="This is the join page of our chamber of commerce project for WDD230 at BYU-I">
+  </head>
+  <body>
+    <header>
+      <div class="meet-greet">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+      </div>
+      <div class="header">
+        <div class="header-logo-block">
+          <img class="logo" src="images/chamber/final-chamber-logo.webp" alt="Village of Oswego custom logo">
+          <div class="name-block">
+            <h1>Village of Oswego</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://www.facebook.com/VillageofOswego"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/village-of-oswego/"><i class="fa-brands fa-linkedin"></i></a>
+          <ul class="navigation">
+            <li>
+              <a href="#" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p id="current-date"></p>
+    </header>
+    <main>
+      <div id="form">
+        <form class="join-form" method="get" action="thankyou.html">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <label for="fname" id="fname-label">First Name:
+              <input type="text" name="fname" id="fname" required>
+            </label>
+            <label for="lname" id="lname-label">Last Name:
+              <input type="text" name="lname" id="lname" required>
+            </label>
+            <label for="email" id="email-label">Email:
+              <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+            </label>
+            <label for="phone" id="phone-label">Phone #:
+              <input type="tel" name="phone" id="phone" placeholder="1234567890" required>
+            </label>
+          </div>
+          <br>
+          <div class="member-group">
+            <h2>Membership Level</h2>
+            <label for="nonprofit">
+              <input type="radio" name="member-level" id="nonprofit" checked>Non-Profit (Free)
+            </label>
+            <label for="bronze">
+              <input type="radio" name="member-level" id="bronze">Bronze ($5/month)
+            </label>
+            <label for="silver">
+              <input type="radio" name="member-level" id="silver">Silver ($10/month)
+            </label>
+            <label for="gold">
+              <input type="radio" name="member-level" id="gold">Gold ($15/month)
+            </label>
+          </div>
+          <br>
+          <div class="business">
+            <h2>Business Information</h2>
+            <label for="bname" id="bname-label">Company:
+              <input type="text" name="bname" id="bname" required>
+            </label>
+            <label for="title" id="title-label">Position:
+              <input type="text" name="title" id="title" pattern="[A-Za-z\s-]{7,}"
+                placeholder="Letters, Hyphens, and Spaces Only. Min 7 Characters">
+            </label>
+            <label for="description" id="description-label">Description:
+              <textarea name="description" id="description" placeholder="Please describe your business here"
+                required></textarea>
+            </label>
+          </div>
+          <br>
+          <label for="hidden">
+            <input type="hidden" id="date-time" name="date-time">
+          </label>
+          <button type="submit" id="submit" name="submit">Submit</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo-block">
+        <img class="footer-logo" src="images/chamber/final-chamber-logo.webp" alt="Village of Oswego custom logo">
+        <div class="footer-name-block">
+          <p><span>Oswego Chamber of Commerce</span>
+            <br>100 Parkers Miller
+            <br>Oswego, IL 60543
+          </p>
+        </div>
+      </div>
+      <div class="contact-block">
+        <p>*No Email Available*</p>
+        <p>(630) 554-3618</p>
+        <p>
+          <a
+            href="https://www.google.com/maps/place/100+Parkers+Ml,+Oswego,+IL+60543/@41.6860273,-88.3601947,17z/data=!3m1!4b1!4m5!3m4!1s0x880eee6132f74d07:0xa346a725a5a0d50c!8m2!3d41.6860233!4d-88.358006">Location
+            Map</a>
+        </p>
+      </div>
+      <div class="base">
+        <span>&copy; <span id="current-year"></span> Oswego Chamber</span>
+        <span class="seperate">|</span>
+        <br><span class="my-name">Hunter Blake</span>
+        <span class="seperate">|</span>
+        <br><span>WDD230 Project</span>
+        <br><span class="seperate">|</span>
+        <span id="last-update"></span>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/form.js"></script>
+    <script src="https://kit.fontawesome.com/0db8271eaf.js" crossorigin="anonymous"></script>
+  </body>
+</html>

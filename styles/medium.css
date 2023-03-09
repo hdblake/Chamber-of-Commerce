@@ -1,0 +1,292 @@
+@media only screen and (min-width: 30em) {
+	/* HEADER CSS STYLING */
+
+	.header {
+		padding: 6px;
+	}
+
+	.meet-greet {
+		font-size: 16px;
+	}
+
+	.logo {
+		width: 85px;
+		height: 85px;
+	}
+
+	.name-block {
+		font-size: 14px;
+		margin-left: 8px;
+	}
+
+	nav {
+		font-size: 22px;
+	}
+
+	.fa-brands {
+		letter-spacing: 20px;
+	}
+
+	.responsive a {
+		padding: 4px;
+	}
+
+	#current-date {
+		font-size: 16px;
+		padding: 5px;
+	}
+
+	/* CHAMBER HOME CSS STYLING */
+
+	#chamber {
+		grid-template-columns: 1fr 1fr 225px;
+		grid-template-rows: repeat(6, 225px);
+	}
+
+	#chamber section {
+		padding: 8px;
+	}
+
+	#chamber h3 {
+		font-size: 20px;
+		margin-top: 6px;
+	}
+
+	#chamber .hero {
+		grid-column: span 3;
+		grid-row: 1/3;
+	}
+
+	#chamber .news {
+		grid-column: span 3;
+		grid-row: 3/4;
+	}
+
+	#chamber .hero h3 {
+		font-size: 26px;
+		top: 6px;
+		left: 12px;
+	}
+
+	.hero button {
+		font-size: 20px;
+	}
+
+	#chamber .spotlight {
+		grid-column: span 3;
+		grid-row: 4/5;
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.random-spotlight p {
+		padding-top: 10px;
+		margin-bottom: 4px;
+		margin-top: 6px;
+	}
+
+	.random-spotlight p,
+	.random-spotlight a {
+		font-size: 15px;
+	}
+
+	#chamber .join {
+		display: block;
+		grid-column: span 3;
+		grid-row: 5/6;
+	}
+
+	#chamber .join button {
+		padding: 10px;
+		width: 98%;
+		border-radius: 8px;
+		background-color: var(--main-color2);
+		border: 2px solid var(--main-color3);
+		font-size: 22px;
+		font-weight: bold;
+		color: var(--main-color1);
+		cursor: pointer;
+	}
+
+	#chamber .join button:hover {
+		background-color: var(--main-color3);
+		color: var(--main-color1);
+		border: 2px solid var(--main-color2);
+		border-radius: 8px;
+		padding: 10px;
+		box-shadow: 4px 4px 8px black;
+	}
+
+	#chamber .join a:visited {
+		color: var(--main-color1);
+	}
+
+	.event p,
+	.news p,
+	.join p {
+		font-size: 16px;
+		color: var(--main-color3);
+	}
+
+	#chamber .event {
+		grid-column: span 2;
+	}
+
+	/* DISCOVER PAGE CSS STYLING */
+
+	#discover section {
+		padding: 8px;
+	}
+
+	#discover h2 {
+		font-size: 24px;
+	}
+
+	#discover picture img:hover {
+		box-shadow: 0 0 30px var(--main-color3);
+	}
+
+	/* JOIN PAGE CSS STYLING */
+
+	#form {
+		border-radius: 8px;
+	}
+
+	#form h2 {
+		font-size: 28px;
+		letter-spacing: 1px;
+	}
+
+	#form .contact-info label,
+	#form .business label,
+	#form .member-group label {
+		font-size: 16px;
+	}
+
+	#form .contact-info input,
+	#form .business input {
+		width: 75%;
+		height: 30px;
+	}
+
+	#form .member-group input {
+		margin-right: 14px;
+	}
+
+	#form .business textarea {
+		width: 75%;
+	}
+
+	/* DISCOVER PAGE CSS STYLING */
+
+	.directory-grid {
+		grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+		gap: 1rem;
+	}
+
+	.directory-grid section {
+		font-size: 16px;
+		padding: 8px;
+	}
+
+	.directory-list section {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+		padding: 8px;
+		font-size: 16px;
+		gap: 1rem;
+	}
+
+	.directory-list section h2,
+	.directory-list section p:nth-of-type(1),
+	.directory-list section p:nth-of-type(2),
+	.directory-list section a {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	/* CONTACT PAGE CSS STYLING */
+
+	#contact {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: start;
+		justify-content: center;
+	}
+
+	.inqueries {
+		font-size: 16px;
+		margin-bottom: 40px;
+	}
+
+	.inqueries input {
+		height: 30px;
+	}
+
+	.inqueries label,
+	.inqueries input,
+	.inqueries textarea {
+		margin: 6px;
+	}
+
+	.inqueries input,
+	.inqueries textarea {
+		width: 80%;
+	}
+
+
+	/* FOOTER CSS STYLING */
+
+	footer {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 75px;
+	}
+
+	.footer-logo-block {
+		grid-column: 1/2;
+		grid-row: 1/2;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+
+	.footer-logo-block span {
+		font-size: 20px;
+	}
+
+	.footer-name-block {
+		text-align: left;
+		margin-left: 8px;
+		font-size: 16px;
+	}
+
+	.base {
+		flex-direction: row;
+		grid-row: 2/3;
+		grid-column: span 2;
+		font-size: 15px;
+		justify-content: center;
+		align-items: center;
+		margin-top: 8px;
+		margin-bottom: -5px;
+	}
+
+	.base span:nth-of-type(1) {
+		margin-top: 0px;
+	}
+
+	.base span {
+		margin-bottom: 0px;
+	}
+
+	.base span {
+		margin-left: 2px;
+		margin-right: 2px;
+	}
+
+	.seperate {
+		display: inline;
+	}
+}

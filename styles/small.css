@@ -1,0 +1,781 @@
+* {
+	box-sizing: border-box;
+	font-family: "Frank Ruhl Libre", serif;
+	--main-color1: #102542;
+	--main-color2: #f87060;
+	--main-color3: #cdd7d6;
+}
+
+body {
+	margin: 0 auto;
+	background-color: var(--main-color3);
+}
+
+main {
+	max-width: 1250px;
+	margin: 0 auto;
+}
+
+/* HEADER CSS STYLING */
+
+header {
+	background-color: var(--main-color2);
+	margin: 0 auto;
+	padding-bottom: 4px;
+	border-bottom: 2px solid var(--main-color1);
+}
+
+.header {
+	color: var(--main-color1);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	padding: 4px;
+	max-width: 85%;
+}
+
+.meet-greet {
+	background-color: var(--main-color1);
+	color: var(--main-color2);
+	padding: 0;
+	text-align: center;
+	font-size: 14px;
+	border: 2px solid var(--main-color3);
+	border-radius: 4px;
+	margin: 0 auto;
+}
+
+.logo {
+	width: 70px;
+	height: 70px;
+}
+
+.header-logo-block {
+	display: flex;
+	align-items: center;
+}
+
+.name-block {
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left;
+	margin-left: 4px;
+}
+
+.name-block h1 {
+	margin-bottom: -8px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+}
+
+.fa,
+.fa-brands {
+	color: var(--main-color1);
+}
+
+.fa-brands {
+	letter-spacing: 10px;
+}
+
+.navigation {
+	list-style: none;
+	text-align: center;
+	padding: 6px;
+}
+
+.navigation li:first-child {
+	display: block;
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	text-align: center;
+	text-decoration: none;
+}
+
+ul.navigation.responsive {
+	margin: 0;
+}
+
+.responsive {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: var(--main-color2);
+	border-radius: 8px;
+}
+
+.responsive li {
+	display: block;
+	margin-bottom: 6px;
+}
+
+.responsive a {
+	color: var(--main-color1);
+	font-weight: bold;
+	padding: 2px;
+	border-radius: 4px;
+}
+
+.responsive a:hover {
+	background-color: var(--main-color1);
+	color: var(--main-color3);
+}
+
+.responsive .fa-bars:hover {
+	color: var(--main-color3);
+}
+
+#current-date {
+	color: var(--main-color1);
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	width: 95%;
+	margin: 0 auto;
+	padding: 3px;
+	background-color: var(--main-color3);
+	border: 2px solid var(--main-color1);
+	border-radius: 4px;
+	margin-bottom: 10px;
+}
+
+/* CHAMBER HOME CSS STYLING */
+
+#chamber {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, 225px);
+	gap: 0.5rem;
+	margin: 10px;
+}
+
+#chamber section {
+	grid-column: span 1;
+	padding: 6px;
+	border: 2px solid var(--main-color2);
+	background-color: var(--main-color1);
+	text-align: center;
+	border-radius: 6px;
+	box-shadow: 2px 2px 5px black;
+}
+
+#chamber h3 {
+	color: var(--main-color2);
+	font-size: 18px;
+	margin-top: 4px;
+	letter-spacing: 1px;
+}
+
+#chamber .hero {
+	position: relative;
+	padding: 0;
+}
+
+.event p,
+.news p {
+	font-size: 15px;
+	color: var(--main-color3);
+}
+
+#chamber .hero picture img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+}
+
+#chamber .hero h3 {
+	position: absolute;
+	color: var(--main-color1);
+	text-align: left;
+	font-weight: bold;
+	font-size: 24px;
+	top: 10px;
+	left: 10px;
+}
+
+.hero button {
+	position: absolute;
+	font-size: 18px;
+	right: 10px;
+	bottom: 10px;
+	padding: 8px;
+	border-radius: 5px;
+	border: 3px solid var(--main-color1);
+	background-color: var(--main-color2);
+	color: var(--main-color1);
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.hero button:hover {
+	background-color: var(--main-color3);
+	color: var(--main-color1);
+	border: 2px solid var(--main-color2);
+	border-radius: 5px;
+	padding: 8px;
+	box-shadow: 4px 4px 8px black;
+}
+
+.hero a:visited {
+	color: var(--main-color1);
+}
+
+.weather {
+	display: flex;
+	flex-direction: column;
+	grid-template-columns: 1fr 1fr;
+	color: var(--main-color3);
+}
+
+.forecast {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	font-size: 30px;
+	align-items: center;
+	margin: auto;
+}
+
+.forecast p {
+	margin: 0;
+}
+
+.coverage {
+	grid-column: span 2;
+	text-align: center;
+	font-size: 16px;
+	margin: 0 auto;
+}
+
+.icon img {
+	width: 60px;
+	height: 60px;
+}
+
+.wind-factor {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 10px;
+	border-top: 1px solid var(--main-color2);
+	font-size: 18px;
+}
+
+.wind-speed,
+.wind-factor span:nth-of-type(2) {
+	margin-top: 10px;
+}
+
+.wind-speed,
+.wind-chill {
+	grid-column: 1/2;
+}
+
+.wind-chill,
+.wind-factor span:nth-of-type(4) {
+	margin-top: 5px;
+}
+
+.join {
+	display: none;
+}
+
+.random-spotlight:nth-of-type(3) {
+	display: none;
+}
+
+.spotlight {
+	grid-row: span 2;
+	display: grid;
+	grid-template-rows: auto;
+	gap: 0.5rem;
+}
+
+.random-spotlight:nth-of-type(1),
+.random-spotlight:nth-of-type(2) {
+	border: 2px solid var(--main-color2);
+	margin: 0 auto;
+	width: 100%;
+	grid-row: span 2;
+	height: auto;
+	padding: 0.5rem;
+}
+
+.random-spotlight:nth-of-type(1),
+.random-spotlight:nth-of-type(2),
+.random-spotlight:nth-of-type(3) {
+	position: relative;
+}
+
+
+.random-spotlight p {
+	text-align: center;
+	color: var(--main-color3);
+	font-size: 14px;
+	border-top: 1px solid var(--main-color2);
+	padding-top: 12px;
+}
+
+.random-spotlight a {
+	color: var(--main-color2);
+	font-size: 14px;
+}
+
+/* DISCOVER PAGE CSS STYLING */
+
+#discover {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(6, auto);
+	gap: 0.85rem;
+	margin: 10px;
+}
+
+#discover section,
+.visitors {
+	grid-column: span 1;
+	padding: 6px;
+	border: 2px solid var(--main-color2);
+	background-color: var(--main-color1);
+	text-align: center;
+	box-shadow: 2px 2px 8px black;
+	border-radius: 6px;
+}
+
+#discover h2 {
+	color: var(--main-color2);
+	font-size: 20px;
+	margin-top: 4px;
+	letter-spacing: 1px;
+}
+
+#discover picture img {
+	width: 90%;
+	height: auto;
+}
+
+.oswego p,
+.oswego-east p,
+.kendall-11 p,
+.springbrook p,
+.hudson-crossing p {
+	color: var(--main-color3);
+	font-size: 14px;
+}
+
+.visitors p,
+.visitors span {
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--main-color3);
+}
+
+/* JOIN PAGE CSS STYLING */
+
+#form {
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 10px;
+	padding: 8px;
+	background-color: var(--main-color1);
+	text-align: center;
+	border-radius: 6px;
+	align-items: center;
+	justify-content: center;
+	border: 2px solid var(--main-color2);
+	box-shadow: 2px 2px 8px black;
+}
+
+#form h2 {
+	text-decoration: var(--main-color3) underline;
+	text-underline-offset: 5px;
+	color: var(--main-color2);
+}
+
+#form .contact-info label,
+#form .business label {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+
+#form .contact-info {
+	color: var(--main-color2);
+}
+
+#form .contact-info label,
+#form .contact-block input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	justify-items: center;
+	align-content: center;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#form .contact-info input,
+#form .business input {
+	width: 70%;
+	border-radius: 8px;
+	border: none;
+	height: 25px;
+}
+
+#form .business label,
+#form .business input {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	justify-items: center;
+	align-content: center;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+#form .business label,
+#form .contact-info label {
+	color: var(--main-color3);
+}
+
+#form .business textarea {
+	width: 70%;
+	height: 75px;
+	border-radius: 8px;
+	border: none;
+}
+
+#form .member-group {
+	display: flex;
+	flex-direction: column;
+	color: var(--main-color2);
+}
+
+#form .member-group label {
+	margin-bottom: 15px;
+	color: var(--main-color3);
+	font-size: 14px;
+}
+
+#form .member-group input {
+	margin-right: 10px;
+}
+
+#form button {
+	width: 100px;
+	margin: 0 auto;
+	color: #102542;
+	background-color: var(--main-color2);
+	padding: 5px;
+	border: 2px solid var(--main-color3);
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.thanks h1 {
+	color: var(--main-color1);
+	font-size: 44px;
+	text-align: center;
+}
+
+.thanks p {
+	color: var(--main-color1);
+	font-size: 18px;
+	text-align: center;
+}
+
+/* DIRECTORY PAGE CSS STYLING */
+
+.menu {
+	margin: 1rem;
+	border: 2px solid var(--main-color2);
+	border-radius: 6px;
+	padding: 0.5rem;
+	background-color: var(--main-color1);
+	text-align: center;
+}
+
+.menu button {
+	padding: 0.75rem;
+	background-color: var(--main-color1);
+	color: var(--main-color3);
+	border: 2px solid var(--main-color2);
+	border-radius: 6px;
+	font-size: 17px;
+	letter-spacing: 0.5px;
+}
+
+.directory-grid {
+	display: grid;
+	grid-template-columns: repeat(1, minmax(250px, 1fr));
+	justify-content: center;
+	text-align: center;
+	gap: 0.75rem;
+	margin: 1rem;
+}
+
+.directory-grid section {
+	background-color: var(--main-color1);
+	color: var(--main-color3);
+	border: 2px solid var(--main-color2);
+	padding: 6px;
+	font-size: 14px;
+	box-shadow: 2px 2px 8px black;
+	border-radius: 6px;
+}
+
+.directory-grid section h2 {
+	color: var(--main-color2);
+	display: block;
+	margin-bottom: 10px;
+}
+
+.directory-grid section p {
+	margin-bottom: -12px;
+}
+
+.directory-grid section a {
+	display: block;
+	color: var(--main-color2);
+	text-decoration: underline;
+	margin: auto;
+	margin-bottom: 15px;
+	margin-top: 18px;
+}
+
+.directory-grid img {
+	max-width: 95%;
+}
+
+.directory-list {
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.directory-list section {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	padding: 6px;
+	font-size: 14px;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+}
+
+.directory-list section h2 {
+	display: block;
+	margin-bottom: -8px;
+}
+
+.directory-list section p {
+	display: block;
+	margin-bottom: -8px;
+}
+
+.directory-list section a {
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.directory-list section:nth-child(odd) {
+	background-color: var(--main-color1);
+	color: var(--main-color3);
+	border: 2px solid var(--main-color2);
+	border-radius: 6px;
+}
+
+.directory-list section:nth-child(odd) a:visited {
+	color: var(--main-color3);
+}
+
+.directory-list section:nth-child(even) {
+	background-color: var(--main-color3);
+	color: var(--main-color1);
+	border: 2px solid var(--main-color1);
+	border-radius: 6px;
+}
+
+.directory-list section:nth-child(even) a:visited {
+	color: var(--main-color1);
+}
+
+.directory-list img {
+	display: none;
+}
+
+/* CONTACT PAGE CSS STYLING */
+
+#contact {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--main-color1);
+	margin: 10px;
+	padding: 8px;
+	border-radius: 6px;
+	border: 2px solid var(--main-color2);
+	box-shadow: 2px 2px 8px black;
+}
+
+#contact-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.inqueries {
+	background-color: var(--main-color3);
+	color: var(--main-color1);
+	font-size: 15px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 90%;
+	border-radius: 6px;
+	border: 2px solid var(--main-color2);
+	padding: 4px;
+	text-align: center;
+}
+
+.inqueries input {
+	height: 25px;
+}
+
+.inqueries label,
+.inqueries input,
+.inqueries textarea {
+	margin: 4px;
+}
+
+.inqueries input,
+.inqueries textarea {
+	text-align: center;
+	width: 60%;
+	border: none;
+	border-radius: 6px;
+}
+
+.inqueries button {
+	width: 100px;
+	margin: 0 auto;
+	color: #102542;
+	background-color: var(--main-color2);
+	padding: 5px;
+	border: 2px solid var(--main-color1);
+	border-radius: 5px;
+	font-weight: bold;
+	font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.contact-us {
+	text-align: center;
+}
+
+#contact-form h2,
+.contact-us h2 {
+	text-decoration: var(--main-color3) underline;
+	text-underline-offset: 5px;
+	color: var(--main-color2);
+}
+
+.contact-us p:nth-of-type(odd) {
+	color: var(--main-color2);
+	text-decoration: var(--main-color3) underline;
+	font-size: 17px;
+	margin-bottom: -10px;
+}
+
+.contact-us p:nth-of-type(even) {
+	color: var(--main-color3);
+	margin-bottom: 5px;
+}
+
+/* FOOTER CSS STYLING */
+
+footer {
+	background-color: var(--main-color2);
+	color: var(--main-color1);
+	padding: 6px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	border-top: 2px solid var(--main-color1);
+}
+
+.footer-logo {
+	width: 100px;
+	height: 100px;
+}
+
+.footer-logo-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin-bottom: -10px;
+}
+
+.footer-logo-block span {
+	font-style: italic;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+.contact-block a {
+	color: var(--main-color1);
+	font-weight: bold;
+}
+
+.base {
+	border-top: 1px solid var(--main-color2);
+	display: flex;
+	flex-direction: column;
+	font-size: 14px;
+	padding: 8px;
+}
+
+.base span:nth-of-type(1) {
+	margin-top: 8px;
+}
+
+.base span {
+	margin-bottom: -8px;
+}
+
+.my-name {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.seperate {
+	display: none;
+}
+
+/* DIRECTORY FOOTER FOR WIREFRAMES */
+
+.wireframes a {
+	color: var(--main-color1);
+	margin-left: 2px;
+	margin-right: 2px;
+}

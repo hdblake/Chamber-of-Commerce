@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&display=swap" rel="stylesheet">
+    <title>Thank You For Joining!</title>
+    <meta name="description" content="This is the join page of our chamber of commerce project for WDD230 at BYU-I">
+  </head>
+  <body>
+    <header>
+      <div class="meet-greet">
+        <p>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</p>
+      </div>
+      <div class="header">
+        <div class="header-logo-block">
+          <img class="logo" src="images/chamber/final-chamber-logo.webp" alt="Village of Oswego custom logo">
+          <div class="name-block">
+            <h1>Village of Oswego</h1>
+            <p>Chamber of Commerce</p>
+          </div>
+        </div>
+        <nav>
+          <a href="https://www.facebook.com/VillageofOswego"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.linkedin.com/company/village-of-oswego/"><i class="fa-brands fa-linkedin"></i></a>
+          <ul class="navigation">
+            <li>
+              <a href="#" onclick="toggleMenu()"><i class="fa fa-bars"></i></a>
+            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <p id="current-date"></p>
+    </header>
+    <main>
+      <div class="thanks">
+        <h1>Form Submitted!</h1>
+        <p>Thank you for your interest in joining the Oswego Chamber of commerce. We will review your form and respond
+          in a timely manner with our decision.</p>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-logo-block">
+        <img class="footer-logo" src="images/chamber/final-chamber-logo.webp" alt="Village of Oswego custom logo">
+        <div class="footer-name-block">
+          <p><span>Oswego Chamber of Commerce</span>
+            <br>100 Parkers Miller
+            <br>Oswego, IL 60543
+          </p>
+        </div>
+      </div>
+      <div class="contact-block">
+        <p>*No Email Available*</p>
+        <p>(630) 554-3618</p>
+        <p>
+          <a
+            href="https://www.google.com/maps/place/100+Parkers+Ml,+Oswego,+IL+60543/@41.6860273,-88.3601947,17z/data=!3m1!4b1!4m5!3m4!1s0x880eee6132f74d07:0xa346a725a5a0d50c!8m2!3d41.6860233!4d-88.358006">Location
+            Map</a>
+        </p>
+      </div>
+      <div class="base">
+        <span>&copy; <span id="current-year"></span> Oswego Chamber</span>
+        <span class="seperate">|</span>
+        <br><span class="my-name">Hunter Blake</span>
+        <span class="seperate">|</span>
+        <br><span>WDD230 Project</span>
+        <br><span class="seperate">|</span>
+        <span id="last-update"></span>
+        </span>
+      </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/0db8271eaf.js" crossorigin="anonymous"></script>
+  </body>
+</html>

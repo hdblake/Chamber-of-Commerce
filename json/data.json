@@ -1,0 +1,94 @@
+{
+  "businesses": [
+    {
+      "name": "Kendall 11",
+      "address": "95 Fifth St Oswego IL 60543",
+      "phone": "(630) 264-9831",
+      "website": "https://www.classiccinemas.com/program?location=kendall",
+      "image": "images/directory/kendall.webp",
+      "membership": "bronze",
+      "width": "300px",
+      "height": "75px"
+    },
+    {
+      "name": "Fox Bend Golf Course",
+      "address": "3516 US-34 Oswego, IL 60543",
+      "phone": "(630) 554-3939",
+      "website": "https://www.foxbendgolfcourse.com/",
+      "image": "images/directory/fox-bend.webp",
+      "membership": "gold",
+      "width": "205px",
+      "height": "75px"
+    },
+    {
+      "name": "Fox Valley Winery",
+      "address": "59 Main St Oswego, IL 60543",
+      "phone": "(630) 554-0404",
+      "website": "https://www.foxvalleywinery.com/",
+      "image": "images/directory/fox-winery.webp",
+      "membership": "silver",
+      "width": "75px",
+      "height": "75px"
+    },
+    {
+      "name": "My Sister's Lil Donut Shoppe",
+      "address": "25 S Madison St Oswego, IL 60543",
+      "phone": "(331) 203-2736",
+      "website": "https://www.facebook.com/mysisterslildonuts/",
+      "image": "images/directory/donut.webp",
+      "membership": "gold",
+      "width": "75px",
+      "height": "75px"
+    },
+    {
+      "name": "Venue 5126",
+      "address": "5126 Stephens Rd Oswego, IL 60543",
+      "phone": "(630) 554-7100",
+      "website": "https://venue5126.com/",
+      "image": "images/directory/Venue5126.webp",
+      "membership": "gold",
+      "width": "75px",
+      "height": "75px"
+    },
+    {
+      "name": "Village Grind",
+      "address": "19 Main St Oswego, IL 60543",
+      "phone": "(630) 554-6678",
+      "website": "https://www.villagegrindoswego.com/",
+      "image": "images/directory/village-grind.webp",
+      "membership": "silver",
+      "width": "105px",
+      "height": "75px"
+    },
+    {
+      "name": "The Popcorn Store",
+      "address": "1690 Douglas Rd Oswego, IL 60543",
+      "phone": "(630) 554-4699",
+      "website": "https://thepopcornstores.com/",
+      "image": "images/directory/popcorn.webp",
+      "membership": "bronze",
+      "width": "75px",
+      "height": "75px"
+    },
+    {
+      "name": "Tap House",
+      "address": "123 W Washington St Oswego, IL 60543",
+      "phone": "(630) 383-2020",
+      "website": "https://www.taphousegrills.com/oswego/",
+      "image": "images/directory/tap-house.webp",
+      "membership": "silver",
+      "width": "75px",
+      "height": "75px"
+    },
+    {
+      "name": "Oswego Cyclery",
+      "address": "57 Main St Oswego, IL 60543",
+      "phone": "(630) 551-2300",
+      "website": "https://www.oswegocyclery.com/",
+      "image": "images/directory/cycling.webp",
+      "membership": "bronze",
+      "width": "160px",
+      "height": "75px"
+    }
+  ]
+}
